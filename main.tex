@@ -1,95 +1,136 @@
-% LaTeX file for resume 
-% This file uses the resume document class (res.cls)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[margin]{res}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{multicol}
 \usepackage{enumitem}
-
 \usepackage{hyperref}
 \hypersetup{}
 
-% the margin option causes section titles to appear to the left of body text 
-\textwidth=5.2in % increase textwidth to get smaller right margin
-\sectionwidth=1.275in
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
-\begin{document} 
- 
-\name{Shayan Hosseini\\[12pt]} % the \\[12pt] adds a blank line after name
- 
-\address{No. 14, Tanhajou Street, \\Tehranpars 3rd Square, \\Tehran, Iran, 1653984753}
-\address{Cell: +98-919-6421171 \\ \href{mailto:shayan.hosseini@ut.ac.ir}{\texttt{shayan.hosseini@ut.ac.ir}} \\ 
-		\href{http://www.shayanh.ir}{\texttt{http://www.shayanh.ir}}}
+\name{Shayan Hosseini} % Your name
+\address{No. 14, Tanhajou Street, Tehranpars 3rd Square, Tehran, Iran, 1653984753} % Your address
+\address{+98-919-6421171 \\ \href{mailto:shayan.hosseiny@gmail.com}{\texttt{shayan.hosseiny@gmail.com}} \\ 
+	\href{http://www.shayanh.ir}{\texttt{http://www.shayanh.ir}}} % Your phone number and email
 
- 
-\begin{resume}
+\begin{document}
+	
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\section{Research Interests}
-\begin{itemize}[leftmargin=0mm]
-	\item Distributed Systems
-	\item Data Structures and Algorithms
-	\item Graph Theory
-	\item Bioinformatics
-\end{itemize}
+\begin{rSection}{Research Interests}
+	\begin{multicols}{2}
+		\begin{itemize}[leftmargin=0mm]
+			\item Distributed Systems
+			\item Data Structures and Algorithms
+			\item Graph Theory
+			\item Bioinformatics
+		\end{itemize}
+	\end{multicols}
+\end{rSection}
 
-\section{Education}
-    {\bf \href{http://ut.ac.ir/en}{University of Tehran}, Tehran, Iran} \hfill 2015 - present
-    \\Undergraduate student of B.Sc. in Software Engineering
-    
-   	\begin{itemize}
-	\item Current GPA: 17.11/20
-	\item Related Courses: Design and Analysis of Algorithms (20/20), Data Structures and Algorithms (19.8/20),
-	Theory of Formal Languages and Automata (19.5/20), Algorithmic Graph Theory (18.5/20), Computer Networks (18.1/20),
-	Advanced Programming (18/20), Discrete Mathematics (18/20)
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+	
+	{\bf \href{http://ut.ac.ir/en}{University of Tehran}, Tehran, Iran} \hfill 2015 - present
+	\\Undergraduate student of B.Sc. in Software Engineering
+	
+	\begin{itemize}
+		\item Current GPA: 17.11/20
+		\item Related Courses: Design and Analysis of Algorithms (20/20), Data Structures and Algorithms (19.8/20),
+		Theory of Formal Languages and Automata (19.5/20), Algorithmic Graph Theory (18.5/20), Computer Networks (18.1/20),
+		Advanced Programming (18/20)
 	\end{itemize}
+	
+	{\bf \href{http://www.helli.ir/}{Allameh Helli High School}, Tehran, Iran} \hfill 2011 - 2015
+	\\\textit{\scriptsize Affiliated with the National Organization for the Development of Exceptional Talents (NODET),}
+	\\Diploma in Mathematics and Physics Discipline
+	
+\end{rSection}
 
-    {\bf \href{http://www.helli.ir/}{Allameh Helli High School}, Tehran, Iran} \hfill 2011 - 2015
-    \\\textit{\scriptsize Affiliated with the National Organization for the Development of Exceptional Talents (NODET),}
-    \\Diploma in Mathematics and Physics Discipline
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-\section{Awards and Honors}
+\begin{rSection}{Awards and Honors}
+	
 	{\bf \href{http://icpc.baylor.edu/}{ACM-ICPC}}, International Collegiate Programming Contest by ACM.
-	\vspace{2mm}
 	\begin{itemize}
 		\item {\bf 56\textsuperscript{th} Team} in
 		\href{https://icpc.baylor.edu/community/results-2017}{the 41\textsuperscript{th} ACM ICPC World Finals},
 		South Dakota, USA\hfill 2017
-
+		
 		\item {\bf 2\textsuperscript{nd}, 2\textsuperscript{nd}, 9\textsuperscript{th} Team} in Regional Contests of ACM ICPC West Asia Region,
 		Tehran site, respectively in
 		\href{http://icpc.sharif.edu/acmicpc17/scoreboard/}{2017},
 		\href{http://icpc.sharif.edu/acmicpc16/scoreboard/}{2016} and
 		\href{http://icpc.sharif.edu/acmicpc15/scoreboard/}{2015}.
-    \end{itemize}
+	\end{itemize}
+	
+	{\bf Silver Medal} in the 24\textsuperscript{th} \href{http://inoi.ir/}{Iranian National Olympiad in Informatics}\hfill 2014
+	
+	Member of \href{https://www.bmn.ir/}{{\bf National Elites Foundation}}, Iran \hfill 2014 - persent
+	
+\end{rSection}
 
-    {\bf Silver Medal} in the 24\textsuperscript{th} \href{http://inoi.ir/}{Iranian National Olympiad in Informatics}\hfill 2014
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
 
-    Member of \href{https://www.bmn.ir/}{{\bf National Elites Foundation}}, Iran \hfill 2014 - persent
-
-\section{Teaching Experience}
+\begin{rSection}{Teaching Experience}
+	
 	{\bf Teaching Assistant}
 	\\\href{http://ut.ac.ir/en}{University of Tehran}
 	\begin{itemize}
-		\item {\bf Chief TA:} Design and Analysis of Algorithms, H. Mahini \hfill Fall 2018
-		\item {\bf Chief TA:} Design and Analysis of Algorithms, H. Mahini \hfill Spring 2018
+		\item {\bf Chief TA:} Design and Analysis of Algorithms, H. Mahini \hfill Fall 2018, Spring 2018
 		\item Engineering Probability and Statistics, B. Bahrak \hfill Fall 2018
 		\item Advanced Programming, R. Khosravi, A. Sadeghi \hfill Fall 2017
 		\item Discrete Mathematics, S.Mohammadi \hfill Spring 2017
 		\item Data Structures and Algorithms, H. Feili \hfill Fall 2016
 	\end{itemize}
-
-    {\bf IOI and ACM-ICPC related}
-    \\Teaching special topics in computer science including Algorithms, Data Structrues,
-    and Graph Theory to undergraduate students preparing for ACM-ICPC as well as high school
-    students preparing for INOI.
-    \begin{itemize}
+	
+	{\bf IOI and ACM-ICPC related}
+	\\Teaching special topics in computer science including Algorithms, Data Structrues,
+	and Graph Theory to undergraduate students preparing for ACM-ICPC as well as high school
+	students preparing for INOI.
+	\begin{itemize}
 		\item \href{http://ut.ac.ir/en}{University of Tehran} \hfill 2017
 		\item \href{http://inoi.ir/}{INOI Summer Camp}, at \href{http://ysc.ac.ir/}{Young Scholars Club} \hfill 2015
-	    \item \href{http://www.helli.ir/}{Allameh Helli High School} \hfill 2015
+		\item \href{http://www.helli.ir/}{Allameh Helli High School} \hfill 2015
 	\end{itemize}
+	
+\end{rSection}
 
-\section{Professional Development}
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Development}
 	The following \href{https://www.coursera.org/}{Coursera} courses were taken to acquire skills relevant to my work and research.
 	\begin{itemize}
 		\item {\bf Cloud Computing Concepts}, by University of Illinois at Urbana-Champaign
@@ -97,21 +138,29 @@
 		\item {\bf Game Theory}, by Stanford University and UBC
 		\item {\bf Functional Programming Principles in Scala}, by EPFL
 	\end{itemize}
+\end{rSection}
 
-\section{Professional Experience}
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Professional Experience}
 	{\bf Technical Lead and Product Manager at \href{https://cafebazaar.ir/}{Cafebazaar}} \hfill 2017 - present
 	\\ Member of infrastructure team. Aiming to provide high available and scalable services to other technical teams and later to other companies as a public cloud. Leading a team of 7 people to build a distributed storage service and develop our Content Delivery Network. Responsible for maintaining and developing these services and collaborating with other technical teams and companies.
-
+	
 	{\bf Software Engineer at \href{https://cafebazaar.ir/}{Cafebazaar}} \hfill 2015 - 2017
 	\\ Cafebazaar is the most popular and successful Android application store in Iran, with more than 30 million users. Member of app acquisition team working on application download and payment system. Responsible for system ownership of CDN and parts of Cafebazaar back-end, Interviewing new software engineer candidates and improvement of the technical interview process.
-
+	
 	{\bf Software Developer at \href{http://www.sabzgroup.com/}{Sabz Biomedicals}} \hfill Summer 2015
-	\\Developing software of Gel Documentation System(An instrument for  high quality visualization and recording of DNA bands).
+	\\Developing software of Gel Documentation System (an instrument for  high quality visualization and recording of DNA bands).
+\end{rSection}
 
-\section{Notable \\ Projects}
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Notable Projects}
 	{\bf \href{https://github.com/shayanh/floodlight-sara-protocol}{Network Course Project}} \hfill 2018
 	\\Designed an algorithm for detecting topology of an unknown network. Implemented in \href{https://github.com/floodlight/floodlight}{Floodlight} SDN OpenFlow Controller.
-
+	
 	{\bf \href{https://github.com/shayanh/pintos}{Operating Systems Course Project}} \hfill 2017
 	\\Implemented system call handler and an efficient CPU scheduler for communicating to many IO devices for \href{https://en.wikipedia.org/wiki/Pintos}{Pintos}.
 	
@@ -121,31 +170,34 @@
 	{\bf \href{https://github.com/KhassTeam/Persian-CAPTCHA}{CAPTCHA Farsi}} \hfill 2011-2012
 	\\Generating CAPTCHA in Persian by using image processing and calligraphy methods. Can be used in Persian websites. Awarded as Best Project in
 	\href{https://www.helli.ir/portal/content/%D8%AA%D9%82%D8%AF%DB%8C%D8%B1-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%86%D8%B4-%D8%A2%D9%85%D9%88%D8%B2%D8%A7%D9%86-%D8%A8%D8%B1%D8%AA%D8%B1%D9%BE%DA%98%D9%88%D9%87%D8%B4%DA%AF%D8%B1}
-	{8th NODET Young Researchers Festival}.
-
-\section{Skills and Qualities} 
-    {\bf Theoretical Background:}
-    \\Experienced in Design of Algorithms, Data Structures, and Discrete Mathematical fields such as Graph Theory and Combinatorics.
-
+		{8th NODET Young Researchers Festival}.
+\end{rSection}
+	
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Skills and Qualities}
+	
+	{\bf Theoretical Background:}
+	Experienced in Design of Algorithms, Data Structures, and Discrete Mathematical fields such as Graph Theory and Combinatorics.
+	
 	{\bf Languages and Tools:}
-	\\Expert in C/C++, Go, Python, Bash-Scripting, Pascal, SQL, Git. Working knowledge in Java, Lua, Verilog, \LaTeX.
-
-    {\bf Software Engineering:}
-    \\Familiar with different object oriented design patterns and software development methodologies such as Agile and DevOps.
-
+	Expert in C/C++, Go, Python, Bash-Scripting, Pascal, SQL, Git. Working knowledge in Java, Lua, Verilog, \LaTeX.
+	
+	{\bf Software Engineering:}
+	Familiar with different object oriented design patterns and software development methodologies such as Agile and DevOps.
+	
 	{\bf Web Application Development:}
-	\\Comfortable with Django, Flask, CSS3 and HTML5.
-
+	Comfortable with Django, Flask, CSS3 and HTML5.
+	
 	{\bf Site Reliability Engineering:}
-	\begin{itemize}
-		\item Managed scalability and maintainability challenges in several web applications having thousands of requests per second.
-		\item Expert Linux user and experienced in system administration.
-		\item Experience in Ceph storage platform, Kubernetes, Docker, NGINX.
-		\item Working knowledge in Computer Networks.
-	\end{itemize}
-
+	Managed scalability and maintainability challenges in several web applications having thousands of requests per second.
+	Expert Linux user and experienced in system administration.
+	Experience in Ceph storage platform, Kubernetes, Docker, NGINX, Computer Networks.
+	
 	{\bf Other:}
-	\\Creative, self-motivated, eager to learn new things. Communicative and collaborative with the ability to work both independently and in a team.
-
-\end{resume}
+	Creative, self-motivated, eager to learn new things. Communicative and collaborative with the ability to work both independently and in a team.
+	
+\end{rSection}
+	
 \end{document}
