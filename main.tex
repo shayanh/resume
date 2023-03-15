@@ -27,11 +27,12 @@
 \usepackage{hyperref}
 \hypersetup{}
 
-\usepackage[left=0.50in,top=0.6in,right=0.50in,bottom=0.6in]{geometry} % Document margins
+% \usepackage[left=0.50in,top=0.6in,right=0.50in,bottom=0.6in]{geometry} % Document margins
 
 \name{Shayan Hosseini} % Your name
 \address{X410D 2366 Main Mall, Vancouver, BC Canada V6T 1Z4} % Your address
-\address{+1-604-841-1112 \\ \href{mailto:sshayanh@cs.ubc.ca}{\texttt{sshayanh@cs.ubc.ca}} \\ 
+\address{+1-604-841-1112 \\
+  \href{mailto:seshayanh@gmail.com}{\texttt{seshayanh@gmail.com}} \\ 
 	\href{http://www.shayanh.ir}{\texttt{https://shayanh.com/}}} % Your phone number and email
 
 \begin{document}
@@ -44,66 +45,14 @@
 	{\bf \href{https://www.ubc.ca/}{University of British Columbia}}, Vancouver, BC, Canada
         \hfill 2021 - present
 	\\M.Sc. in Computer Science
-  \\Thesis: \textit{Verfication of Distributed Systems}
-	
+  \\\textit{Research topics}: I have been working broadly on distributed
+  systems. My main research project has been building correct distributed
+  systems using lightweight formal methods. I enjoy exploring different
+  abstractions for making distributed systems better.
+
 	{\bf \href{http://ut.ac.ir/en}{University of Tehran}}, Tehran, Iran \hfill 2015 - 2020 
 	\\B.Sc. in Computer Engineering
-  \\Thesis: \textit{Verfication of Microservices}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	RESEARCH EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Research Experience}
-  {\bf Research Intern at Microsoft Research Remond},
-    {Remote \hfill Summer 2022}
-	\\ \textit{Under supervision of B. Arzani and D. Crankshaw} \smallskip
-	\vspace{-0.5em}
-	\begin{itemize}[leftmargin=3mm]
-		\setlength{\itemsep}{1pt}
-		\setlength{\parskip}{0pt}
-		\setlength{\parsep}{0pt}
-		\renewcommand\labelitemi{$\cdot$}
-
-    \item Member of the Networking Research Group at Microsoft Research.
-    \item Improved automatic mitigation of faulty datacenter links by 13\%
-      using reinforcement learning.
-  \end{itemize}
-
-
-	{\bf Research Assistant at the \href{https://www.ubc.ca/}{University of British Columbia}},
-    {Vancouver, BC, Canada \hfill 2021 - present}
-	\\ \textit{Under supervision of Prof. I. Beschastnikh} \smallskip
-	\vspace{-0.5em}
-	\begin{itemize}[leftmargin=3mm]
-		\setlength{\itemsep}{1pt}
-		\setlength{\parskip}{0pt}
-		\setlength{\parsep}{0pt}
-		\renewcommand\labelitemi{$\cdot$}
-
-		\item Working on the \href{https://github.com/UBC-NSS/pgo}{PGo} project,
-            to compile verifiable models of the distributed system into implementations
-            in Go.
-		\item Built a verified model of Raft consensus protocol that can be compiled into Go.
-			I came up with a solution to build verified fault-tolerant systems using PGo.
-		\item Built several eventually consistent systems such as Conflict-free Replicated 
-			Data Types using PGo. 
-	\end{itemize}
-
-	{\bf Research Intern at \href{https://www.mpi-inf.mpg.de/}{Max Planck Institute for Informatics}}, {Saarbr{\"u}cken, Germanry \hfill Summer 2019}
-	\\ \textit{Under supervision of Prof. C. Lenzen} \smallskip
-	\vspace{-0.5em}
-	\begin{itemize}[leftmargin=3mm]
-		\setlength{\itemsep}{1pt}
-		\setlength{\parskip}{0pt}
-		\setlength{\parsep}{0pt}
-		\renewcommand\labelitemi{$\cdot$}
-
-		\item Working to make routing algorithms fault-tolerant by using an augmentation 
-            process. I proved the lower bound for the minimum number of edges 
-		    and vertices in the resulting augmented graph.
-	\end{itemize}
+  \\\textit{Thesis}: Verfication of Microservices
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -111,15 +60,116 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Publications}
-  \begin{enumerate}
-    \item 
-      Finn Hackett, {\bf Shayan Hosseini}, Renato Costa, Matthew Do, and Ivan
-      Beschastnikh. 2023. Compiling Distributed System Models with PGo. In
-      Proceedings of the 28th ACM International Conference on Architectural
-      Support for Programming Languages and Operating Systems, Volume 2 (ASPLOS
-      2023). Association for Computing Machinery, New York, NY, USA, 159–175.
-      \href{https://doi.org/10.1145/3575693.3575695}{https://doi.org/10.1145/3575693.3575695}
-  \end{enumerate}
+  {\bf \href{https://dl.acm.org/doi/10.1145/3575693.3575695}{Compiling Distributed System Models with PGo}} \hfill ASPLOS 2023
+  \\ Finn Hackett, \textit{Shayan Hosseini}, Renato Costa, Matthew Do, and Ivan
+  Beschastnikh
+  \\ 28\textsuperscript{th} ACM International Conference on Architectural
+  Support for Programming Languages and Operating Systems
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Experience}
+	{\bf Research Assistant at the \href{https://www.ubc.ca/}{University of British Columbia}},
+    {Vancouver, BC, Canada \hfill 2021 - present}
+    \\\textit{Advisor}: Ivan Beschastnikh \smallskip
+	\vspace{-0.5em}
+	\begin{itemize}[leftmargin=3mm]
+		\setlength{\itemsep}{1pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+		\renewcommand\labelitemi{$\cdot$}
+
+    \item Building \href{https://github.com/DistCompiler/pgo}{PGo project}, a compiler for building correct distributed
+      systems. PGo compiles verified models of distributed system models into
+      implementations in Go.
+    \item Created a distributed runtime library that provides the same model-level
+      semantics on the implementation-level by employing distributed
+      transactions and dependency injection.
+    \item Made a verified distributed key-value store based on the Raft protocol
+      by using PGo. Improving state-of-the-art $3\times$ on development effort and
+      40\% on throughput.
+	\item Built verified eventually consistent systems such as Conflict-free Replicated 
+		Data Types by using PGo.
+	\end{itemize}
+
+  {\bf Research Intern at \href{https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/}{Microsoft Research Remond}},
+    {Remote \hfill Summer 2022}
+    \\\textit{Advisors}: Behnaz Arzani and Dan Crankshaw \smallskip
+	\vspace{-0.5em}
+	\begin{itemize}[leftmargin=3mm]
+		\setlength{\itemsep}{1pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+		\renewcommand\labelitemi{$\cdot$}
+
+    \item Designed a system for automatic mitigation of faulty datacenter links
+      by helping datacenter operators fixing the most critical links first.
+    \item Improved failures of Azure's automatic mitigation of faulty datacenter links by 13\% based
+      on the simulation results.
+  \end{itemize}
+
+	{\bf Research Intern at \href{https://www.mpi-inf.mpg.de/}{Max Planck Institute for Informatics}}, {Saarbr{\"u}cken, Germanry \hfill Summer 2019}
+  \\\textit{Advisor}: Christoph Lenzen \smallskip
+	\vspace{-0.5em}
+	\begin{itemize}[leftmargin=3mm]
+		\setlength{\itemsep}{1pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+		\renewcommand\labelitemi{$\cdot$}
+
+		\item Researching to make routing algorithms fault-tolerant by using an augmentation 
+      process. Showed the lower bound for the minimum number of edges 
+		  and vertices in the resulting augmented graph.
+	\end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Awards and Honors}
+	
+	{\bf \href{http://icpc.baylor.edu/}{ICPC}}, International Collegiate Programming Contest
+	\\The International Collegiate Programming Contest is the most prestigious programming 
+  contest for college students.
+	\smallskip
+	\vspace{-0.5em}
+	\begin{itemize}[leftmargin=3mm]
+		\setlength{\itemsep}{1pt}
+		\setlength{\parskip}{1pt}
+		\setlength{\parsep}{0pt}
+		\renewcommand\labelitemi{$\cdot$}
+
+		\item {\bf World Finalist} in
+		\href{https://icpc.global/community/results-2017}{the 41\textsuperscript{th} 
+            ICPC World Finals},
+		South Dakota, USA\hfill 2017
+		\\ Top 0.3\% among more than 45,000 students from all over the world.
+		
+		\item {\bf 3\textsuperscript{rd} team} in
+            \href{http://www.acmicpc-pacnw.org/scoreboard/2020/index1.html}
+            {ICPC Pacific Northwest Regional Contest}
+		\hfill 2021
+		\\ Among more than 100 teams participating from the area of Pacific
+    Northwest.
+
+		\item {\bf 3\textsuperscript{rd}, 2\textsuperscript{nd}, 2\textsuperscript{nd} team} in 
+      \href{https://icpc.ir/}{ICPC West Asia Region Regional Contest}, respectively in
+      \href{http://icpc.sharif.edu/acmicpc18/scoreboard/}{2018},
+      \href{http://icpc.sharif.edu/acmicpc17/scoreboard/}{2017},
+      \href{http://icpc.sharif.edu/acmicpc16/scoreboard/}{2016}.
+		\\ Top 1\% among more than 300 teams that participate in this contest every year.
+	\end{itemize}
+	
+	{\bf Silver Medal} in the 24\textsuperscript{th} \href{http://inoi.ir/}
+        {Iranian National Olympiad in Informatics}\hfill 2014
+	\smallskip
+	\\Top 0.16\% in the algorithmic programming contest among 10,000 participants 
+    in the country.
+
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -137,7 +187,7 @@
 		\renewcommand\labelitemi{$\cdot$}
 
 		\item Leading a team of 10 people working to integrate all public cloud services 
-            into a unified product.
+        	into a unified product.
 		\item Built a billing system to automatically charge users for
             their usage of the services.
 		\item Built a monitoring and alerting system that allowed users
@@ -154,15 +204,15 @@
 		\renewcommand\labelitemi{$\cdot$}
 
 		\item Co-founded and led a team of 8 engineers to provide highly available and 
-            scalable cloud service to other technical teams and companies (now rebranded 
-            as \href{https://sotoon.ir/}{Sotoon}).
+      scalable cloud service to other technical teams and companies (later rebranded 
+      as \href{https://sotoon.ir/}{Sotoon}).
 		\item Started and developed a distributed object storage service using Ceph. 
-            It serves more than 50TB of data and responds to more than hundreds of 
-            requests per second in production.
+      This service serves more than 50 TB of data and responds to more than hundreds of 
+      requests per second in production.
 		\item Scaled our existing content delivery network 50\% by developing a new 
-            architecture using cache servers.
+      architecture using cache servers.
 		\item Designed and developed a new software architecture for the CDN nodes to be 
-            dynamically configurable and multi-tenant.% With this architecture, we were able to serve more than one customer in our network.
+      dynamically configurable and multi-tenant.% With this architecture, we were able to serve more than one customer in our network.
 		% \item Decreased latency of our CDN 10\% by using a new load balancing architecture based on IP Anycast.
 	\end{itemize}
 	
@@ -175,96 +225,13 @@
 		\setlength{\parsep}{0pt}
 		\renewcommand\labelitemi{$\cdot$}
 
-		\item Developing Cafe Bazaar back-end codebase, which had more than 100,000 lines of 
-            Python code and 30 million users.
+		\item Developing Cafe Bazaar back-end codebase with more than 100,000 lines of 
+      Python code and 30 million users.
 		\item System owner of Cafe Bazaar CDN and parts of the back-end. Managing these systems 
-            on more than 15 servers.
+      on more than 15 servers.
 		\item Responsible for code reviews and system maintenance.
 	\end{itemize}
 	
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	AWARDS
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Awards and Honors}
-	
-	{\bf \href{http://icpc.baylor.edu/}{ICPC}}, International Collegiate Programming Contest
-	\\The International Collegiate Programming Contest is the most prestigious programming 
-        contest for college students.
-	\smallskip
-	\vspace{-0.5em}
-	\begin{itemize}[leftmargin=3mm]
-		\setlength{\itemsep}{1pt}
-		\setlength{\parskip}{1pt}
-		\setlength{\parsep}{0pt}
-		\renewcommand\labelitemi{$\cdot$}
-
-		\item {\bf 56\textsuperscript{th} team} in
-		\href{https://icpc.global/community/results-2017}{the 41\textsuperscript{th} 
-            ICPC World Finals},
-		South Dakota, USA\hfill 2017
-		\\ Top 0.3\% among more than 45,000 students from all over the world.
-		
-		\item {\bf 3\textsuperscript{rd} team} in
-            \href{http://www.acmicpc-pacnw.org/scoreboard/2020/index1.html}
-            {ICPC Pacific Northwest Regional Contest}
-		\hfill 2021
-		\\ Among more than 100 teams participating from the area of Pacific NW 
-        (including Washington, Oregon, N. California, British Columbia).
-
-		\item {\bf 3\textsuperscript{rd}, 2\textsuperscript{nd}, 2\textsuperscript{nd}, 
-            9\textsuperscript{th} team} in Regional Contests of ICPC West Asia Region,
-		    Tehran site, respectively in
-            \href{http://icpc.sharif.edu/acmicpc18/scoreboard/}{2018},
-            \href{http://icpc.sharif.edu/acmicpc17/scoreboard/}{2017},
-            \href{http://icpc.sharif.edu/acmicpc16/scoreboard/}{2016} and
-            \href{http://icpc.sharif.edu/acmicpc15/scoreboard/}{2015}.
-		\\ Top 1\% among more than 300 teams that participate in this contest every year.
-	\end{itemize}
-	
-	{\bf Silver Medal} in the 24\textsuperscript{th} \href{http://inoi.ir/}
-        {Iranian National Olympiad in Informatics}\hfill 2014
-	\smallskip
-	\\Top 0.16\% in the algorithmic programming contest among 10,000 participants 
-    in the country.
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Notable Projects}
-	{\bf \href{https://peydaa.ir/}{Peydaa}} \hfill 2021 - present
-	\\ Peydaa is a non-profit platform to make transparency in the Iranian job market. 
-    It is a website that people can anonymously share their salary and experience of working 
-    in companies with others. I founded Peydaa myself, working as both product manager and 
-    developer, and over time, four more people joined the team remotely. Until now, more 
-    than 600 users have shared their salaries and experiences on Peydaa.
-
-	{\bf \href{https://github.com/UBC-NSS/pgo}{PGo}} \hfill 2021 - present
-	\\PGo compiles verifiable formal specifications into Go implementations. I contributed 
-    to the PGo distributed runtime and built several distributed systems using PGo. 
-
-	{\bf \href{https://github.com/DistributedClocks/tracing}{Tracing library}} \hfill 2021
-	\\A light-weight library for manual distributed system tracing. Has been used for 
-    precise automatic grading in 
-    \href{https://www.cs.ubc.ca/~bestchai/teaching/cs416_2020w2/index.html}{CPSC 416 course}. 
-    I was the main developer of the project.
-
-    {\bf \href{https://github.com/shayanh/grpc-go-contracts}{gRPC Go Contracts}} \hfill 2020
-    \\A design by contract library for the gRPC Go framework; To verify the communication of 
-    microservices by writing contracts for their RPCs. I designed and implemented this project 
-    as a part of my B.Sc. thesis.
-
-	% {\bf \href{https://github.com/shayanh/limoo}{Limoo}} \hfill 2017
-	% \\A desktop application that shows lyrics for the current playing song, server in \href{https://github.com/shayanh/limoo-server}{Go} and client in \href{https://github.com/shayanh/limoo}{Python}.
-
-	% {\bf \href{https://github.com/KhassTeam/Persian-CAPTCHA}{CAPTCHA Farsi}} \hfill 2011-2012
-	% \\Generating CAPTCHA in Persian by using image processing and calligraphy methods. Can be used in Persian websites. Awarded as Best Project in
-	% \href{https://www.helli.ir/portal/content/%D8%AA%D9%82%D8%AF%DB%8C%D8%B1-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%86%D8%B4-%D8%A2%D9%85%D9%88%D8%B2%D8%A7%D9%86-%D8%A8%D8%B1%D8%AA%D8%B1%D9%BE%DA%98%D9%88%D9%87%D8%B4%DA%AF%D8%B1}
-	% 	{8th NODET Young Researchers Festival}.
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -281,7 +248,7 @@
 		\setlength{\parsep}{0pt}
 		\renewcommand\labelitemi{$\cdot$}
 
-		\item CPSC 416: Distributed Systems, I. Beschastnikh \hfill Spring 2021
+		\item CPSC 416: Distributed Systems, Ivan Beschastnikh \hfill Spring 2021
 	\end{itemize}
 	
 	\href{http://ut.ac.ir/en}{University of Tehran}
@@ -292,13 +259,13 @@
 		\setlength{\parsep}{0pt}
 		\renewcommand\labelitemi{$\cdot$}
 
-		\item {\bf Head TA}, Design and Analysis of Algorithms, H. Mahini \hfill 2018 - 2019 
-		\item Engineering Probability and Statistics, B. Bahrak \hfill Fall 2018, 2019
+		\item {\bf Head TA}, Design and Analysis of Algorithms, Hamid Mahini \hfill 2018 - 2019 
+		\item Engineering Probability and Statistics, Behnam Bahrak \hfill Fall 2018, 2019
 	\end{itemize}
 	
-	{\bf Informatics Olympiad and ICPC related}
-	\\Teaching topics in computer science including Algorithms, Data Structures,
-	and Graph Theory to undergraduate students preparing for ICPC as well as high school
+	{\bf Informatics Olympiad and ICPC}
+	\\Teaching topics in computer science including algorithms, data structures,
+	and graph theory to undergraduate students preparing for ICPC as well as high school
 	students preparing for Informatics Olympiad.
 
 	\vspace{-0.5em}
@@ -315,34 +282,43 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	SKILLS
+%	PROJECTS
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Skills and Qualities}
+\begin{rSection}{Projects}
+	{\bf \href{https://github.com/DistributedClocks/tracing}{Tracing Library}}
+	\\ A light-weight library for manual distributed system tracing. Has been used for precise 
+  automatic grading in the
+  \href{https://www.cs.ubc.ca/~bestchai/teaching/cs416_2020w2/index.html}{CPSC 416 course}.  
 
-	{\bf Programming Languages and Tools:}
-	Expert in Go, Python, Bash-Scripting, Git. Working knowledge in C/C++, SQL, Java, 
-    Lua, Javascript, Verilog, \LaTeX. \smallskip
-	\\
-	{\bf Software Engineering:}
-	Familiar with different object-oriented design patterns, software development 
-    methodologies such as Agile and DevOps and, functional programming.\smallskip
-	\\
-	{\bf Web Application Development:}
-	Comfortable with Django, Flask, CSS3, HTML5 and ReactJS.\smallskip
-	\\
-	{\bf Site Reliability Engineering:}
-	Managed scalability and maintainability challenges in several web applications having 
-    thousands of requests per second.  Expert Linux user and experienced in system administration.
-	Experience with Ceph storage platform, Kubernetes, Docker, NGINX, Networks.\smallskip
-	\\
-	{\bf Theoretical Background:}
-	Expert in design of algorithms, data structures, and discrete mathematical fields such 
-    as graph theory and combinatorics suggested by awards in ICPC and Olympiad in 
-    Informatics.\smallskip
-	\\
-	{\bf Languages:}
-	English (Full professional proficiency), Persian (Native).\smallskip
+  {\bf \href{https://github.com/shayanh/grpc-go-contracts}{gRPC Go Contracts}}
+  \\ A design by contract library for the gRPC Go framework for runtime
+  verification of microservices communication.
 
+	{\bf \href{https://peydaa.ir/}{Peydaa}}
+	\\ Peydaa is a non-profit platform to make transparency in the Iranian job market. 
+  Peydaa is a website that people can anonymously share their salary and experience of working 
+  in companies with others. More than 1000 users have shared their salaries and 
+  experiences on Peydaa.
 \end{rSection}
-	
+
+%----------------------------------------------------------------------------------------
+%	TALKS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Talks}
+  {\bf Compiling Distributed System Models Into Implementations with PGo}
+	\vspace{-0.5em}
+	\begin{itemize}[leftmargin=3mm]
+		\setlength{\itemsep}{1pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+		\renewcommand\labelitemi{$\cdot$}
+
+		\item Microsoft Research, Networking Research Group \hfill November 2022
+    \item TLA+ Conference \hfill September 2022
+    \item AWS Automated Reasoning Group \hfill February 2022
+    \item University of British Columbia \hfill February 2022
+	\end{itemize}
+\end{rSection}
+
 \end{document}
