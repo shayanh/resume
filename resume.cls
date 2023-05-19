@@ -50,11 +50,11 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
 \geometry{
-	top=0.6in, % Top margin
-	bottom=0.6in, % Bottom margin
-	left=0.75in, % Left margin
-	right=0.75in, % Right margin
-	%showframe, % Uncomment to show how the type block is set on the page
+	top=0.50in, % Top margin
+	bottom=0.50in, % Bottom margin
+	left=0.70in, % Left margin
+	right=0.70in, % Right margin
+  %showframe, % Uncomment to show how the type block is set on the page
 }
 
 %----------------------------------------------------------------------------------------
@@ -97,7 +97,7 @@
 \newcommand{\printname}{
 	\begingroup
 		\hfil{\MakeUppercase{\huge\bfseries\name}}\hfil % Style and output the user's name
-		\bigskip\break % Vertical whitespace below name
+		\smallskip\break % Vertical whitespace below name
 	\endgroup
 }
 
@@ -137,15 +137,12 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 parameters: company name, year(s) employed, job title and location
-	\textbf{#1} \hfill {#2} % Bold company name and date to the right
-	\ifthenelse{\equal{#3}{}}{}{ % If the third parameter is empty, don't output the job title and location line
-		\\ % Job title and location on a new line
-		\textit{#3} \hfill \textit{#4} % Output job title and location
-	}%
+  \textbf{#1} at \textbf{#3} \hfill \textit{#2} % Bold company name and date to the right
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
 }{
 	\end{list}
-	\vspace{0.5em} % Vertical whitespace after the end of the list
+  %\vspace{0.5em} % Vertical whitespace after the end of the list
+  %\smallskip
 }
