@@ -50,10 +50,10 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
 \geometry{
-	top=0.50in, % Top margin
-	bottom=0.50in, % Bottom margin
-	left=0.70in, % Left margin
-	right=0.70in, % Right margin
+	top=0.60in, % Top margin
+	bottom=0.60in, % Bottom margin
+	left=0.75in, % Left margin
+	right=0.75in, % Right margin
   %showframe, % Uncomment to show how the type block is set on the page
 }
 
