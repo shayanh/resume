@@ -27,9 +27,10 @@
 ]{resume} % Use the resume class
 
 %\usepackage{ebgaramond} % Use the EB Garamond font
-% \usepackage{palatino}
+%\usepackage{palatino}
+\usepackage{fourier}
 \usepackage{hyperref}
-\usepackage{fontawesome5}
+\usepackage{fontawesome}
 
 %\renewcommand{\familydefault}{\sfdefault}
 
@@ -43,16 +44,16 @@
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
 
 \address{
-  {\small
+  %{\small
 
-  {\small \faIcon{phone-alt}} 604-841-1112 \\
-  \href{https://shayanh.com}{\small \faIcon{globe-americas}\ \texttt{shayanh.com}} \\
+  {\small \faPhone} (604) 841-1112 \\
+  \href{https://shayanh.com}{\small \faGlobe \ \texttt{shayanh.com}} \\
   \href{mailto:seshayanh@gmail.com}{\small \faEnvelope \ \texttt{seshayanh@gmail.com}} \\
-  \href{https://www.linkedin.com/in/sshayanh}{\small \faLinkedin \texttt{/in/sshayanh}} \\
+  \href{https://www.linkedin.com/in/sshayanh}{\small \faLinkedinSquare \texttt{/in/sshayanh}} \\
   \href{https://github.com/shayanh}{\small \faGithub \texttt{/shayanh}} \\
-  {\small \faLocationArrow} Canada
+  {\small \faMapMarker} Vancouver, BC
 
-  }
+  %}
 }
 
 %----------------------------------------------------------------------------------------
@@ -63,7 +64,7 @@
 
 \begin{rSection}{Summary}
 
-  Software engineer with a focus on distributed systems, holding an MSc in computer
+  Software engineer with a focus on distributed systems, having an MSc in computer
   science and \textbf{5 years of industry experience}. Experienced in building
   large-scale backend services, led the development of systems serving
   \textbf{500 million requests per day}. Recognized by winning awards in
@@ -75,19 +76,19 @@
 
 \begin{rSection}{Experience}
 
-  \begin{rSubsection}{Software Systems Researcher}{Jan 2021 - Aug 2023}{\textnormal{the} University of British Columbia}{}
+  \begin{rSubsection}{Distributed Systems Researcher}{Jan 2021 - Aug 2023}{\textnormal{the} University of British Columbia}{}
 
-    \item Designed and built a high-performing \textbf{distributed key-value store} based
+    \item Designed and built a high-performance \textbf{distributed key-value store} based
       on the Raft protocol, achieving a \textbf{40\% increase in throughput} compared to 
       state-of-the-art verified systems.
 
     \item Published \href{https://dl.acm.org/doi/10.1145/3575693.3575695}{my work} 
-      at \href{https://asplos-conference.org/}{ASPLOS}, a top-tier systems
-      conference (21\% acceptance rate) and was
+      at \href{https://asplos-conference.org/}{\textbf{ASPLOS}}, a top-tier systems
+      conference (21\% acceptance rate), and was
       invited to deliver a talk on the topic at leading companies such as AWS and
       Microsoft.
 
-    \item Developed open source projects with more than \textbf{15,000 downloads} and 300 stars on GitHub.
+    \item Developed open source projects with more than 15,000 downloads and 300 stars on GitHub.
 
 	\end{rSubsection}
 
@@ -113,14 +114,17 @@
 
   \begin{rSubsection}{Senior Software Engineer}{Jan 2017 - Apr 2019}{Cafe Bazaar}{}
 
-    \item Joined the internal infrastructure team as the \textbf{4th member} and
-      played a key role in the team's successful transition into a
-      \textbf{public cloud company} with over 50 employees.
+    \item Founding engineer of the infra team;
+      Co-led the team's transition into a
+      \textbf{public cloud company} with 50+ employees.
 
-    \item Led a team of 8 engineers to build a CDN service \textbf{serving 5\%
-      of the entire internet traffic in Iran}.
+    \item Built a multi-tenant CDN service \textbf{serving 5\% of the entire internet traffic in Iran}.
 
-    \item Scaled out the capacity of CDN service by 50\% through deploying a new
+    \item As a technical manager, started the CDN team with 2 engineers and scaled it to a 
+      team of 8.
+
+
+    \item Scaled out the capacity of CDN service by 50\% through designing a new
       architecture utilizing cache servers.
 
   \end{rSubsection}
@@ -153,7 +157,7 @@
 \begin{rSection}{Awards and Honors}
   {\bf Distinguished Artifact Award} in the
   \href{https://asplos-conference.org/asplos2023/index.html}{28\textsuperscript{th} ASPLOS conference} \hfill \textit{Mar 2023}
-  \\ \textit{Awarded to the top 5\% of accepted papers, recognizing an outstanding artifact contributing to research and practice.}
+  \\ \textit{Top 1\% of submitted papers, recognizing an outstanding artifact contributing to research and practice.}
 
 	%{\bf 3\textsuperscript{rd} place} in
   %\href{http://www.acmicpc-pacnw.org/scoreboard/2020/index1.html}{ACM ICPC Pacific Northwest Regional Contest} \hfill \textit{Mar 2021}
@@ -161,7 +165,7 @@
 
 	\item {\bf World Finalist} in the
     \href{https://icpc.global/community/results-2017}{\textbf{41\textsuperscript{th} ACM ICPC World Finals}}, South Dakota, USA \hfill \textit{May 2017}
-  \\ \textit{Placed top 0.1\% among more than 45,000 college students in the most prestigious programming contest in the world.}
+  \\ \textit{Top 0.1\% among more than 45,000 college students in the most prestigious programming contest in the world.}
 
 	{\bf 2\textsuperscript{nd}, 2\textsuperscript{nd}, 3\textsuperscript{rd} place} in 
       \href{https://icpc.ir/}{ACM ICPC West Asia Region Regional Contest}, respectively in
